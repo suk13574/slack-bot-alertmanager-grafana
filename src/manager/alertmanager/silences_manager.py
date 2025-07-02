@@ -38,7 +38,7 @@ class SilencesManager:
 
         return {
             "type": "modal",
-            "callback_id": "alerts_modal",
+            "callback_id": "silence_modal",
             "title": {
                 "type": "plain_text",
                 "text": "List of Silences"
@@ -155,7 +155,7 @@ class SilencesManager:
 
         modal = {
             "type": "modal",
-            "callback_id": "silence_modal",
+            "callback_id": "create_silence_modal",
             "title": {
                 "type": "plain_text",
                 "text": "Silence",

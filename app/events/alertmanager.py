@@ -33,7 +33,7 @@ def silences(ack, body, client):
             logging.error(f"[Slack action] - silence_button: {traceback.format_exc()}")
 
 
-@slack_app.view("silence_modal")
+@slack_app.view("create_silence_modal")
 def submit_silence(ack, client, body, context, view):
     try:
         message = silences_manager.create_silence(view)
